@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>김도헌 — 연락처</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="brand"><a href="index.html">김도헌</a></div>
+      <div class="menu">
+        <a href="index.html">소개</a>
+        <a href="portfolio.html">포트폴리오</a>
+        <a href="contact.html" class="active">연락처</a>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="container">
+    <section class="card">
+      <h1 style="margin-top:0;">Contact</h1>
+      <p class="muted">협업/문의는 아래 폼 또는 이메일로 남겨주세요.</p>
+
+      <form onsubmit="event.preventDefault(); alert('메시지를 잘 받았습니다! (데모 폼)');">
+        <label for="name">이름</label>
+        <input id="name" name="name" placeholder="김도헌" required />
+
+        <label for="email">이메일</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="msg">메시지</label>
+        <textarea id="msg" name="msg" placeholder="안녕하세요, 다음과 같은 건으로 연락드립니다..."></textarea>
+
+        <div style="margin-top:14px;">
+          <button class="button" type="submit">보내기</button>
+        </div>
+      </form>
+
+      <div style="margin-top:18px;">
+        <a class="button" href="mailto:you@example.com">이메일로 연락하기</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">© 2025 김도헌. All rights reserved.</div>
+  </footer>
+</body>
+</html>
